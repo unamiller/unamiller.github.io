@@ -1765,7 +1765,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #b2b2b2;
+		color: #000000;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -1801,7 +1801,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #787878;
+		color: #000000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
@@ -1855,7 +1855,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #787878;
+			color: #000000;
 			background: #fff;
 		}
 
