@@ -2015,6 +2015,10 @@ input, select, textarea {
 		}
 
 /* Image */
+img {
+  width: 100%;
+  height: auto;
+}
 
 	.image {
 		border-radius: 0.35em;
