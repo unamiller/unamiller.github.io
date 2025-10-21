@@ -90,6 +90,12 @@ input, select, textarea {
 
 	}
 
+	@media (min-width: 980px) {
+ 	 .spotlight .content header.major h2 {
+    white-space: nowrap;
+	}
+	}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -99,8 +105,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #ffffff;
-
+		background-color: #f4f0ec ;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, 	#6082B6 15%, #f4f0ec 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, 	#6082B6 15%, #f4f0ec 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, 	#6082B6 15%, #f4f0ec 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, 	#6082B6 15%, #f4f0ec 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -117,7 +126,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #f4f0ec; /* background color */
+		background-color: #f4f0ec ; /* background color */
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -312,7 +321,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #636363;
 	}
 
 	blockquote {
@@ -2346,7 +2355,7 @@ input, select, textarea {
 
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		color: #636363;
 	}
 
 		.icon.alt:hover {
@@ -2485,7 +2494,7 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;
+		color: #636363;
 	}
 
 /* Actions */
@@ -2774,7 +2783,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #ffffff;
+		color: #636363;
 	}
 
 	table thead {
@@ -3778,3 +3787,58 @@ input, select, textarea {
 			}
 
 		}
+/* Make the hero header match main text color */
+#header,
+#header h1,
+#header p {
+  color: #636363;
+}
+
+/* Keep header links readable and not white on hover */
+#header a { color: #38a16f; }
+#header a:hover { color: #2d7a59; border-bottom-color: transparent; }
+
+/* Disable the header fade-in */
+#header.alt > * {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Ensure no initial fade from the is-preload state */
+body.is-preload #header.alt > * {
+  opacity: 1 !important;
+}
+
+/* Also stop the logo spin/scale animation */
+#header.alt .logo {
+  transform: none !important;
+  transition: none !important;
+}
+
+body.is-preload #header.alt .logo {
+  transform: none !important;
+}
+
+.title-green {
+  color: #2d7a59;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+/* Keep nav link color consistent even when scrolled */
+#nav a,
+#nav.alt a {
+  color: #2d7a59;               /* same deep green */
+}
+
+#nav a:hover,
+#nav.alt a:hover {
+  color: #2d7a59;               /* optional darker hover color */
+}
+
+.icon.major img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills the shape nicely without distortion */
+  border-radius: 50%;  /* keep circular shape */
+}
